@@ -1,7 +1,29 @@
 aid: searchlight
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/searchlight.png
 name: Searchlight
-description: 'Searchlight is a company surfaced as a portfolio company of accel and added to the API Evangelist
-  network as a stub for enrichment. Sector: services. This profile is a lead awaiting the enrichment pipeline.'
+description: >-
+  Searchlight (searchlight.ai) is an Accel-backed company in the services sector,
+  added to the API Evangelist network from Accel's portfolio. Its primary web
+  presence is a Webflow-hosted marketing site at www.searchlight.ai, with a
+  product application at app.searchlight.ai and an internal API host at
+  api.searchlight.ai — both of which sit behind Cloudflare and return HTTP 525
+  (origin unreachable to the public), and the marketing site rejects non-browser
+  TLS clients, so no public developer documentation, OpenAPI, or SDKs could be
+  discovered. A public Instatus status page is live at status.searchlight.ai
+  (monitoring Website and App components). Email runs on Google Workspace with
+  HubSpot, and the domain publishes SPF and DMARC records. This profile captures
+  the verifiable public infrastructure; no public API surface was found.
 url: https://raw.githubusercontent.com/api-evangelist/searchlight/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +33,14 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Services
+- Startup
+- SaaS
+- Accel
+- Web Application
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,4 +49,15 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: http://www.searchlight.ai
+  url: https://www.searchlight.ai
+- type: StatusPage
+  url: https://status.searchlight.ai/
+- type: Lifecycle
+  url: lifecycle/searchlight-lifecycle.yml
+- type: DomainSecurity
+  url: security/searchlight-domain-security.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1

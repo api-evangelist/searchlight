@@ -1,0 +1,22 @@
+generated: '2026-07-21'
+method: searched
+source: https://status.searchlight.ai/
+status_page: https://status.searchlight.ai/
+status_page_provider: instatus
+status_page_components:
+- name: Website
+  state: operational
+- name: App
+  state: operational
+notes: >-
+  Public Instatus status page found at status.searchlight.ai (HTTP 200), monitoring
+  two components (Website, App), reporting all systems operational. No public
+  versioning policy, deprecation policy, or SLA document was reachable — the
+  primary marketing site (www.searchlight.ai, Webflow) rejects non-browser TLS
+  clients and both product hosts (app./api.searchlight.ai) return Cloudflare 525
+  (origin unreachable to the public), so no OpenAPI or deprecated operations could
+  be derived.
+versioning: null
+deprecation: null
+sla: null
+deprecated_operations: []
