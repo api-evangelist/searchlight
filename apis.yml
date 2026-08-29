@@ -36,6 +36,9 @@ description: >-
   HubSpot, and the domain publishes SPF and DMARC records. This profile captures
   the verifiable public infrastructure; no public API surface was found.
 url: https://raw.githubusercontent.com/api-evangelist/searchlight/refs/heads/main/apis.yml
+x-api-posture: no-product-api
+x-api-posture-basis: observed
+x-api-posture-note: "This profile captures the verifiable public infrastructure; no public API surface was found."
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
